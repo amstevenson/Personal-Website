@@ -1,0 +1,1227 @@
+
+/* THE FIRST HALF OF THE WEBSITE; PROFILE*/
+
+/* INDEX */
+/* Custom fonts */
+@font-face 
+{
+    font-family: proximaBold;
+    src: url('../fonts/ProximaNova-Bold.otf');
+}
+  
+@font-face
+{
+    font-family: proximaReg;
+    src: url('../fonts/ProximaNova-Regular.otf');
+}   
+  
+@font-face
+{
+	font-family: proximaLight;
+	src: url('../fonts/FiraSans-Light');
+}
+
+@font-face
+{
+	font-family: proximaItalic;
+	src: url('../fonts/ProximaNova-RegItalic.otf');
+}
+
+/* html,body and text styles */
+body, html {
+  	min-height: 98.7%;
+
+    font-size:100%;
+
+    font-family: proximaLight;
+
+	background-image: url("../images/wood-bg.jpg");
+
+
+}
+
+h1{
+	font-family: proximaReg;
+
+	font-size: 1.6vw;
+
+	color: #9E1919;
+
+    text-decoration: none;
+}
+
+h2{
+	font-family: proximaBold;
+
+	font-size: 1.2vw;
+
+    margin-left: 3%;
+
+    margin-right: 3%;
+}
+
+h2.aboutMe{
+
+    font-family: proximaLight;
+
+    font-size: 1.2vw;
+
+    margin-left: 3%;
+
+    margin-right: 3%;
+
+    color: #fff;
+}
+
+/* Layout for each page - navigation panel and content */
+.contentPanel{
+	width:97%;
+
+	min-height:97%;
+
+	vertical-align:top;
+
+	margin-top: 1.4%;
+
+	margin-left: 1.2%;
+}
+
+.contentPanelLeft{
+	width:32%;
+
+	position: fixed;
+
+	height:94%;
+
+	border: 1px solid #3a3a3a;
+
+    display:inline-block;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    vertical-align:top;
+
+	background-image: url("../images/main-bg.png");
+}
+
+.contentPanelRight{
+	width:63%;
+
+	position: fixed;
+
+	height:94%;
+
+	margin-left: 33.7%;
+
+	border: 1px solid #3a3a3a;
+
+    display:inline-block;
+
+    vertical-align:top;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+	background-image: url("../images/main-bg.png");
+}
+
+.panelLeftPicture{
+	margin-top: 2px;
+
+	width:60%;
+
+	height:45%;
+}
+
+/* displaying navigation links */
+.panelLeftNavigation{
+	margin-top: 1%;
+
+    margin-bottom: 1%;
+
+	margin-right: 7%;
+
+	width:50%;
+
+	height:25%;
+}
+
+.panelLeftSocialMedia{
+	margin-top: 6%;
+
+    width:50%;
+
+	height:6%;
+
+    border-bottom: groove;
+}
+
+.panelLeftSocialMediaIcon{
+    margin-left: 2%;
+
+    padding-bottom: 0.5%;
+
+    height: 95%;
+
+    width: 20%;
+}
+
+/* on hover changes to images */
+a [name="twitterIcon"]:hover{
+
+    content: url("../images/icons/twitterblack.png");
+}
+
+a [name="facebookIcon"]:hover{
+
+    content: url("../images/icons/facebookblack.png");
+}
+
+a [name="githubIcon"]:hover{
+
+    content: url("../images/icons/githubblack.png");
+}
+
+a [name="emailIcon"]:hover{
+
+    content: url("../images/icons/emailblack.png");
+}
+
+/* other navigation css */
+.navSpacingTop{
+	border-top: groove;
+
+	padding-top: 4%;
+}
+
+.navSpacingBottom{
+	padding-bottom: 4%;
+}
+
+.active{
+	color: #f92672;
+
+	font-size: 1vw;
+
+	text-decoration: none;
+
+	font-family: ProximaBold;
+}
+
+.link {
+	color: #000;
+
+	font-size: 1vw;
+
+	font-family: ProximaBold;
+
+	text-decoration: none;
+
+	white-space: nowrap;
+}
+
+.link:hover{
+    font-family: ProximaBold;
+
+    color: #f92672;
+
+    font-style: Light;
+}
+
+.textLink{
+	color: #000;
+
+	font-size: 1.2vw;
+
+	font-family: ProximaBold;
+
+	text-decoration: none;
+
+	white-space: nowrap;
+}
+
+.textLink:hover{
+	font-family: ProximaBold;
+
+	color: #f92672;
+
+	font-style: Light;
+}
+
+/* gallery styles */
+.galleryLink {
+    color: #fff;
+
+    font-size: 1vw;
+
+    font-family: ProximaBold;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.galleryLink:hover{
+    font-family: ProximaBold;
+
+    color: #f92672;
+
+    font-style: Light;
+}
+
+.p3
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    color: #f8f8f8;
+}
+
+h1.port
+{
+    font-family: ProximaBold, Arial;
+
+    color: #2490db;
+
+    font-size: 1vw;
+}
+
+.galleryWrap
+{
+    height: 35%;
+
+    width: 93.95%;
+
+    margin: 0 auto;
+
+    margin-left: 4%;
+
+    max-height: 35%;
+}
+
+#gallery1
+{
+    width: 21%;
+
+    height: 76%;
+
+    position: relative;     /* must be relative to as child div is absolute */
+
+    overflow: hidden;       /* hide other divs within this div - shown with jQuery */
+
+    z-index: 0;             /* we will see this div first as its index is 0 */
+
+    padding: 0;
+
+    margin: 0 auto;
+
+    background-image: url("../images/projects/phone-preview.png");
+
+    background-size: 100% 100%;
+
+    border: 0.4vw solid #2999df;
+
+    float: left;
+
+    margin-right: 2%;
+
+    margin-top: 2%;
+
+}
+
+#gallery2
+{
+    width: 21%;
+
+    height: 76%;
+
+    position: relative;     /* must be relative to as child div is absolute */
+
+    overflow: hidden;       /* hide other divs within this div - shown with jQuery */
+
+    z-index: 0;             /* we will see this div first as its index is 0 */
+
+    padding: 0;
+
+    margin: 0 auto;
+
+    background-image: url("../images/projects/footballmain.png");
+
+    background-size: 100% 100%;
+
+    border: 0.4vw solid #2999df;
+
+    float: left;
+
+    margin-right: 2%;
+
+    margin-top: 2%;
+
+}
+
+#gallery3
+{
+    width: 21%;
+
+    height: 76%;
+
+    position: relative;     /* must be relative to as child div is absolute */
+
+    overflow: hidden;       /* hide other divs within this div - shown with jQuery */
+
+    z-index: 0;             /* we will see this div first as its index is 0 */
+
+    padding: 0;
+
+    margin: 0 auto;
+
+    background-image: url("../images/projects/leaverecordspreview.png");
+
+    background-size: 100% 100%;
+
+    border: 0.4vw solid #2999df;
+
+    float: left;
+
+    margin-right: 2%;
+
+    margin-top: 2%;
+}
+
+#gallery4
+{
+    width: 21%;
+
+    height: 76%;
+
+    position: relative;     /* must be relative to as child div is absolute */
+
+    overflow: hidden;       /* hide other divs within this div - shown with jQuery */
+
+    z-index: 0;             /* we will see this div first as its index is 0 */
+
+    padding: 0;
+
+    margin: 0 auto;
+
+    background-image: url("../images/projects/forlornsc-preview.png");
+
+    background-size: 100% 100%;
+
+    border: 0.4vw solid #2999df;
+
+    float: left;
+
+    margin-right: 2%;
+
+    margin-top: 2%;
+}
+
+.galleryContain:hover
+{
+    border-color: #000000;
+
+    cursor: pointer;
+}
+
+.galleryOverlay
+{
+    background-image: url("../images/projects/texture.png");
+
+    display: block;             /* must be block as it is empty */
+
+    position: absolute;         /* jQuery will reposition later. */
+
+    top: 0;                     /* amended in jQuery */
+
+    left: 0;                    /* amended in jQuery */
+
+    width: 100%;               /* same WxH as container */
+
+    height: 100%;
+
+    z-index: 1;                 /* sits on top of image in galleryContain */
+}
+
+.galleryHover
+{
+    width: 80%;               /* reduce size so content is not "squashed" */
+
+    display: block;
+
+    height: 95%;
+
+    position: absolute;         /* absolute - allow us to control where we place in container div */
+
+    z-index: 3;                 /* last in pile */
+
+    margin-left: 12%;
+
+    margin-top: 0px;
+
+    overflow: hidden;
+
+}
+
+/* extras */
+.indexExtraPanel{
+    width:90%;
+
+    margin-left: 4%;
+
+    margin-right: 8%;
+
+    border: 0.17vw solid #bc2419;
+}
+
+
+.indexExtraLeft{
+    width: 47%;
+
+    height: 17vw;
+
+    position: relative;     /* must be relative to as child div is absolute */
+
+    z-index: 0;             /* we will see this div first as its index is 0 */
+
+    overflow: auto;
+
+    display: block;
+
+    padding: 0;
+
+    margin: 0 auto;
+
+    border: 0.4vw solid #2999df;
+
+    float: left;
+
+    margin-right: 2%;
+
+    margin-top: 2%;
+
+    background-image: url("../images/projects/texture.png");
+}
+
+.indexTutorialPanel{
+    width:90%;
+
+    border-bottom: 0.3vw solid #bc2419;
+
+    margin-left: 4%;
+
+    margin-top: 7%;
+
+    margin-bottom: 7%;
+
+    height: 52%;
+}
+
+.indexTutorialImage{
+    width:  30%;
+
+    height: 82%;
+
+    margin-right: 5%;
+
+    margin-bottom: 5%;
+
+    vertical-align: middle;
+
+    float: left;
+}
+
+.p4
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    color: #f8f8f8;
+
+    text-align: center;
+}
+
+.p5
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    color: #f8f8f8;
+
+    float:left;
+}
+
+.p6
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    color: #000;
+
+    float:left;
+
+    margin-top: 5%;
+
+    margin-bottom: 13%;
+}
+
+.indexExtraRight{
+    width: 46%;
+
+    height: 17vw;
+
+    margin-top: 2%;
+
+    float: right;
+
+}
+
+h1.indexContact
+{
+    font-family: ProximaNova-Bold, Arial;
+
+    font-size: 1.2vw;
+
+    color: #2490db;
+
+    margin-left: 4%;
+}
+
+h2.indexTutorialTitleLeft{
+    font-family: proximaLight;
+
+    margin-left: 4%;
+
+    float:left;
+
+    font-size: 1.1vw;
+}
+
+h2.indexTutorialTitleRight{
+    font-family: proximaLight;
+
+    text-align: center;
+
+    margin-right: 12%;
+
+    font-size: 1.1vw;
+}
+
+.indexButton{
+
+    width:53%;
+
+    height:2.7vw;
+
+    background-color: #0a99ef;
+
+    /* dark brown #aa2000; */
+
+    margin-left: 25%;
+
+    margin-bottom: 2%;
+}
+
+.indexButton:hover{
+
+    width:53%;
+
+    height:2.7vw;
+
+    background-color: #2aa9ef;
+
+    /* dark brown transition #bc1a19 */
+
+    margin-left: 25%;
+
+    margin-bottom: 2%;
+}
+
+.indexButtonText
+{
+    font-size: 1vw;
+
+    font-family: proximaBold;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    margin-top: 5%;
+
+    margin-bottom: 13%;
+}
+
+/* PROJECTS */
+/* font styles - extras */
+.projTextDescription
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    margin-top: 5%;
+
+    margin-right: 5%;
+
+    color: #fff;
+}
+
+.projTextName
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    color: #f8f8f8;
+
+    text-align: center;
+
+    margin-top: 5%;
+
+}
+
+.projPanelImage{
+    width:  10vw;
+
+    height: 85%;
+
+    margin-right: 5%;
+    
+    margin-left: 5%;
+
+    vertical-align: middle;
+
+    float: left;
+}
+
+.projSearchText{
+    color: #fff;
+
+    font-size: 1vw;
+
+    font-family: proximaBold;
+
+    margin-top: 2%;
+
+    margin-left: 20%;
+
+    margin-right: 6%;
+
+    margin-bottom : 2%;
+}
+
+
+/* panel */
+.projPanel{
+    width: 80%;
+
+    height: 66%;
+
+    margin-left: 9%;
+
+    background-image: url("../images/projects/texture.png");
+
+    border: 0.5vw solid #2999df;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    border-top: none;
+}
+
+/* panel */
+.projPanelInner{
+
+    width: 90%;
+
+    height: 20vw;
+
+    margin-left: 5%;
+
+    margin-bottom: 5%;
+
+    border-bottom: 0.3vw solid #bc2419;
+}
+
+.projPanelSearch{
+
+    width: 80%;
+
+    height: 6%;
+
+    margin-top: 5%;
+
+    margin-left: 9%;
+
+    background-image: url("../images/projects/texture.png");
+
+    border: 0.5vw solid #2999df;
+
+    overflow: hidden;
+
+    border-bottom: 0.15vw solid #2999df;
+
+}
+
+.projOption{
+
+    padding:0.3%;
+
+    margin: 0;
+
+    border:none;
+
+    outline:none;
+
+    display: inline-block;
+
+    cursor:pointer;
+
+    background: no-repeat right #ddd;
+
+    margin-left: 4%;
+
+    margin-top: 1.2%;
+}
+
+.projFirstOption{
+
+    width: 25%;
+
+    outline:none;
+
+    overflow-x: hidden; 
+
+    display: inline;
+
+    margin-left: 1%;
+
+    margin-top: 1.2%;
+}
+
+.projFirstOption{
+
+    width: 25%;
+    
+    outline:none;
+
+    overflow-x: hidden; 
+
+    display: inline;
+
+    margin-left: 2%;
+
+    margin-top: 1.2%;
+}
+
+.projFirstOptionSubmit{
+
+    width:8%;
+
+    height:1.2vw;
+
+    background-color: #0a99ef;
+
+    display: inline;
+
+    margin-left: 2%;
+
+    margin-top: 1.2%;
+}
+
+.projFirstOptionSubmit:hover{
+
+    width:8%;
+
+    height:1.2vw;
+
+    background-color: #2aa9ef;
+
+    display: inline;
+
+    margin-left: 2%;
+
+    margin-top: 1.2%;
+}
+
+.projSecondOption{
+
+    padding:0.3%;
+
+    margin: 0;
+
+    border:none;
+
+    outline:none;
+
+    display: inline-block;
+
+    cursor:pointer;
+
+    background: no-repeat right #ddd;
+
+    margin-left: 1%;
+
+    margin-top: 1.2%;
+}
+
+.projOptionLabel{
+
+    color: #fff;
+
+    margin-left: 22%;
+}
+
+.copyrightLabel{
+
+}
+
+.copyright{
+
+    color: #000;
+
+    margin-bottom: -20%;
+}
+
+/* ----------    About Me ----------------*/
+/*         Collapsable panels             */
+ 
+#container {
+    width:80%;  
+
+    margin:auto;
+
+    margin-top: 6%;
+}
+
+.expandable-panel {
+    width:100%; 
+
+    position:relative;
+
+    min-height:5%;
+
+    overflow:auto;
+
+    margin-bottom: 2%;
+
+    border: 0.15vw solid #444;
+} 
+
+.expandable-panel-heading {
+    width:100%; 
+
+    cursor:pointer;
+
+    min-height:50px;
+
+    margin-top: -2%;
+
+    clear:both;
+
+    background-color:#E5E5E5;
+
+    position:relative;
+}
+
+.expandable-panel-heading:hover {
+    color:#666;
+}
+
+.expandable-panel-heading h2 {
+    padding:1.8% 0.8% 0.85% 1%; 
+
+    float: center;
+
+    font-size:1vw;
+
+    line-height:1.3vw
+}
+
+.expandable-panel-content { 
+    padding:0 15px 0 15px;
+
+    margin-top:-999px;
+}
+
+.expandable-panel-content p {
+    padding:4px 0 6px 0;
+}
+
+.expandable-panel-content p:first-child  {
+    padding-top:1%;
+
+    font-size: 1vw;
+
+    margin-left: 3%;
+
+    margin-right: 2%;
+}
+
+.expandable-panel-content p:last-child {
+    padding-bottom:2%; 
+
+    font-size: 1vw;
+
+    margin-left: 3%;
+
+    margin-right: 2%;   
+}
+
+.icon-close-open {
+    width:20px;
+
+    height:20px;
+
+    position:absolute;
+
+    background-image:url(../images/icons/closeopenicon.png);
+
+    right:15px;
+}
+
+.expandable-panel-content img {
+    float:right;
+
+    height: 10%;
+
+    width: 16%;
+
+    padding-left: 1%;
+
+    margin-right: 2%;
+}
+
+.header-active {
+    background-color:#66CCFF;
+}
+
+.aboutMeContactTable{
+   
+    width: 99.5%;
+
+    margin-left: 2%;
+
+    margin-right: 1%;
+
+    margin-top: -4%;
+
+    overflow-x: hidden;
+
+}
+
+/*-----------------CONTACT ME----------------*/
+/* first three are containers for information*/
+.contactAdditionalInfo{
+
+    width: 40%;
+
+    height: 80%;
+
+    margin-right: 5%;
+
+    float: right;
+
+    display: inline-block;
+}
+
+.contactMessageMe{
+
+    width: 50%;
+
+    height: 40%;
+
+    margin-left: 5%;
+
+    float: left;
+
+    display: inline-block;
+
+}
+
+.contactRates{
+
+    width: 49%;
+
+    height: 22%;
+
+    margin-left: 5%;
+
+    float: left;
+
+    display: inline-block;
+
+    margin-bottom: 9%;
+}
+
+.contactRatesInner{
+
+    width: 30%;
+
+    display: inline-block;
+
+    margin-right: 1%;
+}
+
+.contactRatesInnerHeader{
+
+    border:solid;
+
+    display: inline-block;
+
+}
+
+.p7
+{
+    font-size: 1.1vw;
+
+    font-family: proximaLight;
+
+    color: #000;
+
+    margin-top: 5%;
+
+}
+
+.p8
+{
+    font-size: 1vw;
+
+    font-family: proximaLight;
+
+    color: #000;
+
+    margin-top: 15%;
+
+}
+
+/* Form text area for message me */
+.contactMessageTextView1{
+
+    width: 90%;
+
+    height: 8%;
+
+    border: 0.2vw solid #2999df;
+
+    color: #fff;
+
+    font-family: proximaLight;
+
+    font-size: 1vw;
+
+    padding:2% 0 2.2% 0;
+
+    padding-left: 1%;
+
+    margin-bottom: 2%;
+
+    background-image: url("../images/projects/texture.png");
+}
+
+.contactMessageTextView2{
+    width: 90%;
+
+    height: 30%;
+
+    border: 0.2vw solid #2999df;
+
+    color: #fff;
+
+    font-family: proximaLight;
+
+    font-size: 1vw;
+
+    padding:2% 0 2.2% 0;
+
+    padding-left: 1%;
+
+    padding-bottom: 30%;
+
+    overflow-y: hidden; 
+
+    background-image: url("../images/projects/texture.png");
+}
+
+.contactMessageSubmit{
+
+    display: inline-block;
+
+    float: left;
+}
+
+.contactDisplayCount{
+
+    display: inline-block;
+
+    border: 0.2vw solid #2999df;
+
+    height: 1.7vw;
+
+    color: #fff;
+
+    width: 25%;
+
+    margin-top: -0.3%;
+
+    pointer-events: none; /* disable click events */
+
+    font-family: proximaLight;
+
+    font-size: 1.1vw;
+
+    float: right;
+
+    text-align: center;
+
+    padding-top: 3%;
+
+    margin-right: 8%;
+
+    background-image: url("../images/projects/texture.png");
+}
+
+form input[id="contactMessageSubmit"] 
+{
+    font-family: proximaBold;
+
+    cursor: pointer;
+
+    width: 64.5%;
+
+    text-align: center;
+
+    border: 1px solid #d8d8d8;
+
+    background: #2999df;
+
+    color: #FFF;
+
+    border-radius: 0.2vw;    
+
+    font-size: 1vw;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    padding: 1vw;
+
+    margin-top: -0.3%;
+}
+
+form input[id="contactMessageSubmit"]:hover
+{
+    background: #28a3f0;
+}
+
+
